@@ -7,7 +7,7 @@ app.use(express.static(__dirname));
 
 app.get("/", function (req, res) {
 //   res.sendFile("portfolio.html", { root: __dirname });
-  res.sendFile(__dirname + '/portfolio.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 server.on("request", app);
