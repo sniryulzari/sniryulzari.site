@@ -79,17 +79,18 @@
         <h2>Projects I'm proud of</h2>
         <article>
           <div class="text">
-            <h4>Bootcamp Full Stack Project</h4>
+            <h4>Full Stack Project</h4>
             <h3>Pet Adoption</h3>
             <p class="blackbox">
-              Ado-Pet is a full stack platform that allow user to sign up,
-              search and adopt their favorite pet. This project was initially
-              build as ITC bootcamp assignment, after which I upgrade it, add
-              features like pet of the week, and improve the design. Ado-Pet is
-              using MongoDB as database, with information on users and pets.
-              This information can be seeing in Admin Dashboard. To try Ado-Pet
-              click
-              <a href="https://pet-adoption-bbvp.onrender.com">here</a>
+              Ado-Pet is a full-stack platform that allows users to sign up,
+              search and adopt their favorite pet. The project was originally
+              created as an ITC boot camp assignment, which I upgraded,
+              enhanced, and improved afterwards, adding features like pet of the
+              week, and improving the design. Ado-Pet utilizes MongoDB as a
+              database for storing information regarding users and pets. The
+              Admin Dashboard provides access to this information. You may want
+              to try
+              <a href="https://pet-adoption-bbvp.onrender.com">Ado-Pet</a>
             </p>
             <h4>Technologies used include:</h4>
             <ul>
@@ -107,19 +108,10 @@
         </article>
         <article class="reverse">
           <div class="text">
-            <h4>Bootcamp Project</h4>
+            <h4>Hackathon Group Project</h4>
             <h3>Secret Apartments</h3>
             <p class="blackbox">
-              Description of the project. This should be fairly concise while
-              also describing the key components that you developed or worked
-              on. It can be as long as you need it to be but should at least be
-              a few sentences long. Be sure to include specific links anywhere
-              in the description. A link looks like
-              <a
-                href="https://drive.google.com/file/d/1qJ9jK2NrMsy0QuyLpaZOgYnn1TgiIsB4/view?usp=share_link"
-                >this</a
-              >, and multiple links look <a href="#">like this</a> and
-              <a href="#">like this</a>.
+              Secret Apartment is a proof of concept Application, that help the users find out the average cost of renting or buying an apartment in a specific area. Based on this information, it will mark the cheapest available property that is less than the market price.
             </p>
             <h4>Technologies used include:</h4>
             <ul>
@@ -136,58 +128,45 @@
         </article>
         <article>
           <div class="text">
-            <h4>Photography Project</h4>
-            <h3>Pet Adoption</h3>
+            <h4>Design Project</h4>
+            <h3>Magenta Lime</h3>
             <p class="blackbox">
-              Description of the project. This should be fairly concise while
-              also describing the key components that you developed or worked
-              on. It can be as long as you need it to be but should at least be
-              a few sentences long. Be sure to include specific links anywhere
-              in the description. A link looks like
-              <a
-                href="https://frontendmasters.github.io/grid-flexbox-v2/grid-figure-figcaption"
-                >this</a
-              >, and multiple links look <a href="#">like this</a> and
-              <a href="#">like this</a>.
+              I designed a website for the fictional band Magenta Lime. This
+              project demonstrated my frontend skills, using mainly CSS, HTML,
+              and a bit of vanilla Javascript. A fully responsive website is
+              available for desktops, tablets, and mobile devices. If you would
+              like to view the first design, click <a href="#">here</a>, and if
+              you would like to view the second design, click
+              <a href="#">here</a>.
             </p>
             <h4>Technologies used include:</h4>
             <ul>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>MongoDB</li>
-              <li>Bootstrap</li>
-              <li>Git Hub</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Java Script</li>
             </ul>
           </div>
           <img
-            src="./img/pet adoption project.png"
+            src="./img/magenta lime.png"
             alt="Screenshot of the Wall of Wonder Collections."
           />
         </article>
         <article class="reverse">
           <div class="text">
-            <h4>Ios and Android App</h4>
+            <h4>Android & IOS Application</h4>
             <h3>Mood Tracker</h3>
             <p class="blackbox">
-              Description of the project. This should be fairly concise while
-              also describing the key components that you developed or worked
-              on. It can be as long as you need it to be but should at least be
-              a few sentences long. Be sure to include specific links anywhere
-              in the description. A link looks like
-              <a
-                href="https://drive.google.com/file/d/1qJ9jK2NrMsy0QuyLpaZOgYnn1TgiIsB4/view?usp=share_link"
-                >this</a
-              >, and multiple links look <a href="#">like this</a> and
-              <a href="#">like this</a>.
+              Meet MoodTracker - a super easy mood tracker & journaling app to capture your mood and help you improve your thinking habits. MoodTracker empowers you to track your mood over time, avoid common thinking traps, and develop perspectives associated with increased happiness and well-being.
             </p>
             <h4>Technologies used include:</h4>
             <ul>
               <li>React Native</li>
+              <li>TypeScript</li>
               <li>Xcode</li>
               <li>Android Studio</li>
             </ul>
           </div>
-          <video width="400" controls>
+          <video width="300" controls>
             <source
               src="https://kadikraman.github.io/react-native-beyond-basics/img/demo.mp4"
               type="video/mp4"
@@ -203,8 +182,7 @@
       <section id="contact">
         <h2>Contact me</h2>
         <p>
-          I'm always interested in hearing about new teaching opportunities,
-          writing curricula, or instructional design work.
+          I'm always interested in hearing about new ideas, business opportunities and talk to interesting people.
         </p>
         <p>
           <a href="mailto:sniryulzari@gmail.com" class="button">Email me</a>
@@ -239,7 +217,7 @@
           </a>
         </li>
       </ul>
-      <p><small>&copy; 2023 Snir yulzari. All rights reserved.</small></p>
+      <p><small>&copy; <small id="year"></small> Snir yulzari. All rights reserved.</small></p>
     </footer>
   </body>
 
@@ -251,5 +229,8 @@
     ws.onmessage = (event) => {
       console.log(event.data);
     };
+
+    let year = new Date().getFullYear();
+    document.getElementById("year").innerHTML = year
   </script>
 </html>

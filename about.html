@@ -79,6 +79,7 @@
             <h4>My favorite technologies include:</h4>
             <ul>
               <li>React</li>
+              <li>React Native</li>
               <li>Node.js</li>
               <li>MongoDB</li>
               <li>SQL</li>
@@ -86,8 +87,8 @@
             </ul>
           </div>
           <img
-            src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
-            alt="Screenshot of the Wall of Wonder."
+            src="./img/profile pic.jpg"
+            alt="My Profile Picture."
           />
         </article>
       </section>
@@ -117,7 +118,11 @@
           </a>
         </li>
       </ul>
-      <p><small>&copy; 2023 Snir yulzari. All rights reserved.</small></p>
+      <p><small>&copy; <small id="year"></small> Snir yulzari. All rights reserved.</small></p>
     </footer>
   </body>
+  <script>
+    let year = new Date().getFullYear();
+    document.getElementById("year").innerHTML = year
+  </script>
 </html>
