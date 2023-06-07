@@ -102,7 +102,7 @@ img {
 /* contact section */
 
 #contact {
-  width: 400px;
+  width: 350px;
   text-align: center;
   margin: 0 auto;
   padding: 4rem 0;
@@ -186,7 +186,6 @@ nav [class*="fa-"]:hover {
 #projects h3 {
   color: var(--aqua);
 }
-
 #projects h4 {
   font-size: 1rem;
   font-family: var(--mono);
@@ -218,9 +217,7 @@ nav [class*="fa-"]:hover {
   border-top: 1px solid var(--aqua);
   border-radius: 25px;
 }
-#projects video {
-  margin-left: 2rem;
-}
+
 /* footer section */
 
 footer {
@@ -273,8 +270,15 @@ footer ul {
     grid-column: 6/11;
     grid-row: 1/2;
   }
+  #projects .reverse video {
+    grid-column: 8/10;
+    grid-row: 1/2;
+  }
   #projects .reverse ul {
     justify-content: flex-start;
+  }
+  #contact {
+    width: 400px;
   }
 }
 @media (min-width: 850px) {
