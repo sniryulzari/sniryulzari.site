@@ -96,7 +96,7 @@ img {
 }
 
 #intro h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 /* contact section */
@@ -216,6 +216,11 @@ nav [class*="fa-"]:hover {
   border-left: 1px solid var(--aqua);
   border-top: 1px solid var(--aqua);
   border-radius: 25px;
+}
+.video {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* footer section */
