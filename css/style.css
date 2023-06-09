@@ -275,7 +275,7 @@ footer ul {
     grid-column: 6/11;
     grid-row: 1/2;
   }
-  #projects .reverse video {
+  #projects .reverse .video {
     grid-column: 8/10;
     grid-row: 1/2;
   }
