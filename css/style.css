@@ -102,7 +102,6 @@ img {
 /* contact section */
 
 #contact {
-  width: 350px;
   text-align: center;
   margin: 0 auto;
   padding: 4rem 0;
@@ -244,6 +243,12 @@ footer ul {
 #year {
   font-size: 1rem;
 }
+
+@media(min-width: 450px) {
+  #contact {
+    width: 400px;
+};
+
 @media (min-width: 800px) {
   article {
     display: grid;
