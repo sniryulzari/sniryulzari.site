@@ -102,7 +102,7 @@ img {
 /* contact section */
 
 #contact {
-  /* width: 400px; */
+  width: 400px;
   text-align: center;
   margin: 0 auto;
   padding: 4rem 0.5rem;
@@ -282,9 +282,6 @@ footer ul {
   #projects .reverse ul {
     justify-content: flex-start;
   }
-  #contact {
-    width: 400px;
-  }
 }
 @media (min-width: 850px) {
   nav {
@@ -298,9 +295,8 @@ footer ul {
   }
 }
 
-@media(min-width: 450px) {
+@media(max-width: 399px) {
   #contact {
-    width: 400px;
-    margin: 4rem 0;
+    width: auto;
   }
 };
