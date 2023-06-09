@@ -102,9 +102,10 @@ img {
 /* contact section */
 
 #contact {
+  width: 400px;
   text-align: center;
   margin: 0 auto;
-  padding: 4rem 0.5rem;
+  padding: 4rem 0;
 }
 
 #contact p:last-child {
@@ -244,9 +245,10 @@ footer ul {
   font-size: 1rem;
 }
 
-@media(min-width: 450px) {
+@media(max-width: 400px) {
   #contact {
-    width: 400px;
+    width:fit-content;
+    margin: 4rem 0.5rem;
   }
 };
 
