@@ -1,18 +1,18 @@
 const express = require("express");
 const server = require("http").createServer();
 const app = express();
+const port = 8080;
 
 // server your css as static
 app.use(express.static(__dirname));
 
 app.get("/", function (req, res) {
-  // res.sendFile('index.html', { root: __dirname });
   res.sendFile(__dirname + '/index.html');
 });
 
 server.on("request", app);
-server.listen(3000, function () {
-  console.log("server started on port 3000");
+server.listen(port, function () {
+  console.log(`Server running on port ${port}.`);
 });
 
 /** Begin websocket */
